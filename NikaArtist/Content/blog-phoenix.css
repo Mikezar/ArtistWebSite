@@ -1,0 +1,154 @@
+﻿.home-back img {
+	content: url('');
+	height: 0%;
+	width: 0%;
+	position: absolute;
+	left: 0;
+}
+
+.home-header-logo {
+	display: none;
+}
+
+#click span,
+.closed #click span {
+	color: #fff;
+}
+
+.grade-1 {
+	background-color: #ffbf66;
+}
+
+.grade-2 {
+	background-color: #d46f4d;
+}
+
+.grade-3 {
+	background-color: #430c05;
+}
+
+.grade-4 {
+	background-color: #00353f;
+}
+
+.grade-6 {
+	background-color: #08c5d1;
+}
+
+.home-header-locale a {
+	color: #08c5d1;
+}
+
+.home-header-socials .instagram img {
+	content: url(/Content/Images/instagram-blog.png);
+}
+
+.home-header-socials .behance img {
+	content: url(/Content/Images/behance-blog.png);
+}
+
+
+.article {
+	vertical-align: top;
+	max-width: 250px;
+	height: 300px;
+	display: inline-block;
+	margin: 1%;
+	border: 1px solid #08c5d1;
+	padding: 1%;
+	text-align: left;
+}
+	.article:hover {
+		border: 1px solid #d72057;
+	}
+
+	.article a img {
+		max-width: 100%;
+	}
+
+.article-text a.title {
+	color: #08c5d1;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	z-index: 10;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	padding: 12px 5px 12px 0px;
+}
+
+	.article-text a.title:hover {
+		text-decoration: underline;
+		color: #d72057;
+	}
+
+	.article-text .description {
+		font-weight: 600;
+		min-height: 55px;
+	}
+
+	.article-date {
+		color: rgb(153, 153, 153);
+		text-transform: uppercase;
+		z-index: 10;
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 600;
+	}
+
+.article-header {
+	font-size: 2.2em;
+	font-weight: 600;
+	width:100%;
+}
+
+.article-datestamp {
+	color: rgb(153, 153, 153);
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.article-frame {
+	width: 67%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+	.article-frame h1 {
+		font-weight: 600;
+	}
+
+	.article-frame p {
+		font-size: 18px;
+	}
+
+	.article-cover {
+		position: relative;
+	}
+
+	.article-cover img {
+		width: 100%;
+		top: -150px;
+	}
+
+@media(max-width:600px) {
+	.gallery-wrapper {
+		text-align: center;
+	}
+
+	.article-content {
+		text-align: left;
+	}
+
+	.article-frame img {
+		text-align: center;
+		width: 100% !important;
+		float: none !important;
+	}
+}

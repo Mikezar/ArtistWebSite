@@ -1,0 +1,187 @@
+﻿@model NikaArtist.Service.Models.ArticleEditModel
+
+<style>
+	.modal-body {
+		overflow-x: auto;
+	}
+
+	.modal-content {
+		max-width: 1200px;
+	}
+</style>
+<div id="editArticleModal" class="modal fade">
+	<div class="modal-dialog" style="max-width: 40%">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Редактирование статьи @Model.ArticleTitleRu</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			@using (Ajax.BeginForm("EditArticle", "Management", new AjaxOptions
+			{
+				OnComplete = "ResponseHandler"
+			}, new { enctype = "multipart/form-data", id = "articleEditForm" }))
+			{
+				<div class="modal-body">
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+							<a class="nav-link home active" data-toggle="pill" href="#home">Основное</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link veditor" data-toggle="pill" href="#veditor" onclick="CKEDITOR.instances.editor.setData($('#RawHtmlRu').val());">Редактор</a>
+						</li>
+					</ul>
+					<br />
+					@{ 
+						Html.RenderPartial("~/Views/Management/Modals/_PaintingModal.cshtml");
+					}
+
+					<div class="tab-content">
+						<div id="home" class="tab-pane container active">
+							@Html.HiddenFor(x => x.Id)
+							@Html.HiddenFor(x => x.CreationDate)
+							@Html.HiddenFor(x => x.RawHtmlEn)
+							@Html.HiddenFor(x => x.RawHtmlRu)
+							@Html.HiddenFor(x => x.CoverId)
+
+							<p class="language-title">Русский</p>
+							<hr />
+							<div class="form-group row">
+								@Html.LabelFor(x => x.ArticleTitleRu, new { @class = "col-sm-4 col-form-label" })
+								<div class="col-sm-8">
+									@Html.TextBoxFor(x => x.ArticleTitleRu, new { @class = "form-control" })
+									@Html.ValidationMessageFor(x => x.ArticleTitleRu)
+								</div>
+							</div>
+							<div class="form-group row">
+								@Html.LabelFor(x => x.DescriptionRu, new { @class = "col-sm-4 col-form-label" })
+								<div class="col-sm-8">
+									@Html.TextAreaFor(x => x.DescriptionRu, new { @class = "form-control" })
+									@Html.ValidationMessageFor(x => x.DescriptionRu)
+								</div>
+							</div>
+							<p class="language-title">Английский</p>
+							<hr />
+							<div class="form-group row">
+								@Html.LabelFor(x => x.ArticleTitleEn, new { @class = "col-sm-4 col-form-label" })
+								<div class="col-sm-8">
+									@Html.TextBoxFor(x => x.ArticleTitleEn, new { @class = "form-control" })
+									@Html.ValidationMessageFor(x => x.ArticleTitleEn)
+								</div>
+							</div>
+							<div class="form-group row">
+								@Html.LabelFor(x => x.DescriptionEn, new { @class = "col-sm-4 col-form-label" })
+								<div class="col-sm-8">
+									@Html.TextAreaFor(x => x.DescriptionEn, new { @class = "form-control" })
+									@Html.ValidationMessageFor(x => x.DescriptionEn)
+								</div>
+							</div>
+							<hr />
+							<div class="form-group row">
+								@Html.LabelFor(x => x.CoverId, new { @class = "col-sm-4 col-form-label" })
+
+								<div id="cover" class="col-sm-8">
+									<img width="200" src="/image?id=@(Model.CoverId.HasValue ? Model.CoverId.Value : 0)" />
+								</div>
+							</div>
+						</div>
+						<div id="veditor" class="tab-pane container">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="language" id="htmlRu" value="option1" checked>
+								<label class="form-check-label" for="htmlRu">
+									RU
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="language" id="htmlEn" value="option2">
+								<label class="form-check-label" for="htmlEn">
+									EN
+								</label>
+							</div>
+							<div class="clearfix"></div>
+							<br />
+							<button type="button" id="selectPaintings" class="btn btn-primary">Выбрать изображение</button>
+							<hr />
+							<textarea id="editor" name="editor"></textarea>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<div class="clearfix"></div>
+						<button type="button" id="selectCover" class="btn btn-primary">Выбрать изображение</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="ModalHelper.onSuccessSave(this)">Закрыть</button>
+						<button id="submitBtn" type="button" class="btn btn-primary">Сохранить</button>
+
+					</div>
+			</div>
+			}
+		</div>
+	</div>
+</div>
+
+
+<script>
+	ModalHelper.initForm('articleEditForm');
+
+    CKEDITOR.replace('editor', {
+        width: '100%',
+        height: '500px'
+    });
+
+    $(document).ready(function () {
+        $('.veditor').on('click', function () {
+            $('.modal-dialog')[0].style.maxWidth  = '95%';
+		});
+
+        $('.home').on('click', function () {
+            $('.modal-dialog')[0].style.maxWidth  = '40%';
+		});
+        $('#selectPaintings').on('click', function () {
+           GetPaintingSelectList(
+                function (response) {
+                    ModalHelper.modalOpen('#painting', response);
+					$('tr').on('click', function () {
+						var id = this.id;
+						navigator.clipboard.writeText('/image?id=' + id);
+						$('#paintingModal').modal("toggle");
+					});
+                });
+        });
+		$('#submitBtn').on('click', function () {
+
+			if (!$('#articleEditForm').valid()) return;
+
+			var data = CKEDITOR.instances.editor.getData();
+
+			if (data) {
+				if ($('#htmlRu').prop('checked')) {
+					$('#RawHtmlRu').val(data)
+				}
+				else {
+					$('#RawHtmlEn').val(data);
+				}
+			}
+
+			$('#articleEditForm').submit();
+		});
+
+
+        $('#htmlRu, #htmlEn').on('click', function () {
+            saveData();
+        })
+
+        function saveData() {
+            var data = CKEDITOR.instances.editor.getData();
+            if ($('#htmlRu').prop('checked')) {
+                $('#RawHtmlEn').val(data);
+                CKEDITOR.instances.editor.setData($('#RawHtmlRu').val());
+            }
+            else {
+                $('#RawHtmlRu').val(data)
+                CKEDITOR.instances.editor.setData($('#RawHtmlEn').val())
+            }
+        }
+    })
+</script>
+
+
+

@@ -1,0 +1,12 @@
+﻿<div id="imgModal" class="modal">
+    <span class="closeCustModal">&times;</span>
+    <img id="imgModalSrc" class="modal-content">
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.closeCustModal').on('click', function () {
+            $('#imgModal')[0].style.display = "none";
+        });
+    });
+</script>

@@ -1,0 +1,168 @@
+2019-04-07 20:45:04.1849 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-04-07 20:45:04.1849 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-04-07 20:45:09.7646 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-04-07 20:45:09.7646 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-04-07 23:14:58.2953 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photosphoto_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:14:58.2953 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photosphoto_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:15:00.3995 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photosphoto_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:15:00.3995 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photosphoto_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:16:54.3385 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:16:54.3385 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:18:00.7524 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:18:15.7764 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:19:08.7912 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:19:08.7912 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:20:34.1393 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:20:34.1483 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:20:41.1756 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:20:41.1815 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:39:55.1913 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:39:55.1913 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:39:56.7044 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:39:56.7124 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:39:59.4125 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S4.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:39:59.4125 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:40:24.2576 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:40:24.2576 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:45:44.9198 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:45:44.9198 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:57:15.5497 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-07 23:57:15.5497 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26

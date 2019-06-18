@@ -1,0 +1,117 @@
+﻿@model NikaArtist.Service.Models.UploadModel
+
+@{
+    ViewBag.Title = "Загрузка фотографий";
+    Layout = "~/Views/Shared/_ManagementLayout.cshtml";
+}
+
+@using (Ajax.BeginForm("UploadPainting", "Management",
+    new AjaxOptions
+    {
+        UpdateTargetId = "uploadContainer"
+    }, new
+    {
+        enctype = "multipart/form-data",
+        id = "paintLoadForm"
+    }))
+
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="form-group">  
+            <div class="col-sm-7">
+                <div class="input-group">
+                    <label class="input-group-btn">
+                        <span class="btn btn-info btn-file">
+                            Выбрать изображения&hellip;  <input id="uploadFile" type="file" style="display: none;" data-val-required="Выберите файл" name="files" data-val="true" multiple="multiple">
+                        </span>
+                    </label>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                <span id="validityMessages" class="alert-danger"></span>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="form-group">
+            <div class="col-sm-7 col-sm-offset-3">
+                <input id="upload" type="button" value="Загрузить" name="Upload" onclick="UploadPhoto()" class="btn btn-primary" />
+                <span id="uploadLoader" style="display: none;">
+                    <img id="searchLoader" src="@Url.Content("~/Content/Images/loader.gif")" />Идет загрузка
+                </span>
+            </div>
+        </div>
+    </div>
+}
+
+<div id="uploadContainer" onload="UploadPhoto_Complete();">
+    @Html.Partial("_UploadedPaintings", Model)
+</div>
+
+<div id="editUploadPhoto"></div>
+
+
+
+<script>
+    $(document).ready(function () {
+        $('.delete').on('click', function () {
+            var item = $(this);
+            var photoId = $(item).prop("id");
+
+            DeleteEntity(photoId, '@Url.Action("DeleteUploadPhoto")', item);
+        });
+
+        $('.edit').on('click', function () {
+            var photoId = $(this).prop("id");
+			AddEditEntity(photoId, '@Url.Action("EditUploadPhoto")', '#editUploadPhoto');
+        })
+
+        $(':file').on('fileselect', function (event, numFiles, label) {
+
+            var input = $(this).parents('.input-group').find(':text'),
+                log = numFiles > 1 ? 'Файлов выбрано: ' + numFiles : label;
+
+            if (input.length) {
+                input.val(log);
+            } else {
+                if (log) alert(log);
+            }
+
+        });
+    });
+
+    $(document).on('change', ':file', function () {
+        var input = $(this),
+            numFiles = input.get(0).files ? input.get(0).files.length : 1,
+            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        input.trigger('fileselect', [numFiles, label]);
+    });
+
+</script>
+
+<script>
+    function UploadPhoto() {
+        if ($("#uploadFile").val()) {
+            var iSize = ($("#uploadFile")[0].files[0].size / 1024);
+            iSize = (Math.round((iSize / 1024) * 100) / 100);
+            if (iSize > 4) {
+                $('span#validityMessages').html("Необходимо выбрать файл размером менее 4MB");
+                return;
+            }
+            else {
+                $('#uploadLoader').show();
+                $("#paintLoadForm").submit();
+            }
+        }
+        else {
+            $('span#validityMessages').html("Вы не выбрали файл для загрузки");
+            return;
+        }
+    }
+
+    function UploadPhoto_Complete() {
+        $('#uploadLoader').hide();
+    }
+</script>
+
+

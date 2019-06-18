@@ -1,0 +1,258 @@
+2019-02-24 13:01:46.4636 Error 
+2019-02-24 13:01:46.5025 Error 
+2019-02-24 14:12:39.9444 Error System.Web.HttpCompileException (0x80004005): c:\users\mikezar\source\repos\NikaArtist\NikaArtist\Views\Management\Articles.cshtml(12): error CS1973: 'HtmlHelper<dynamic>' has no applicable method named 'Partial' but appears to have an extension method by that name. Extension methods cannot be dynamically dispatched. Consider casting the dynamic arguments or calling the extension method without the extension method syntax.
+   â System.Web.Compilation.AssemblyBuilder.Compile()
+   â System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   â System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   â System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   â System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   â System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   â System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   â System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   â System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   â System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   â System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2019-02-24 14:12:49.3944 Error System.Web.HttpCompileException (0x80004005): c:\users\mikezar\source\repos\NikaArtist\NikaArtist\Views\Management\Articles.cshtml(12): error CS1973: 'HtmlHelper<dynamic>' has no applicable method named 'Partial' but appears to have an extension method by that name. Extension methods cannot be dynamically dispatched. Consider casting the dynamic arguments or calling the extension method without the extension method syntax.
+   â System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   â System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   â System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   â System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   â System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   â System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   â System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   â System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   â System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   â System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   â System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2019-02-24 14:57:54.5460 Error System.Web.HttpParseException (0x80004005): The using block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   â System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   â System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   â System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   â System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   â System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   â System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   â System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   â System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   â System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   â System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   â System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   â System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   â System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   â System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2019-02-24 14:58:48.4996 Error System.Web.HttpParseException (0x80004005): The using block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   â System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   â System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   â System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   â System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   â System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   â System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   â System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   â System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   â System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   â System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   â System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   â System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   â System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   â System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2019-02-24 14:58:56.7735 Error System.Web.HttpParseException (0x80004005): The using block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   â System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   â System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   â System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   â System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   â System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   â System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   â System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   â System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   â System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   â System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   â System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   â System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   â System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   â System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2019-02-24 15:16:25.3753 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   â System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-02-24 15:16:25.3753 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   â System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-02-24 15:17:06.7238 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   â System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-02-24 15:21:50.4639 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   â System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-02-24 15:21:50.4639 Error System.InvalidOperationException: The partial view '~/Views/Management/Modals/Paintings.cshtml' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Management/Modals/Paintings.cshtml
+   â System.Web.Mvc.PartialViewResult.FindView(ControllerContext context)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   â System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2019-02-24 15:22:53.5862 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   â System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-02-24 15:23:55.7039 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   â System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-02-24 15:24:31.5700 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   â System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-02-24 15:24:31.5700 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   â System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-02-24 18:48:33.8780 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   â System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   â System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   â System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)

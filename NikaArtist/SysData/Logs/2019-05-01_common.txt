@@ -1,0 +1,777 @@
+2019-05-01 13:32:48.1291 Error System.Data.SqlClient.SqlException (0x80131904): Символьные или двоичные данные могут быть усечены.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 86
+ClientConnectionId:c4911d04-fd30-4088-99af-93b461e272c3
+Error Number: 8152, State: 13, Class: 16
+2019-05-01 13:33:00.3792 Error System.Data.SqlClient.SqlException (0x80131904): Символьные или двоичные данные могут быть усечены.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 86
+ClientConnectionId:c4911d04-fd30-4088-99af-93b461e272c3
+Error Number: 8152, State: 13, Class: 16
+2019-05-01 13:33:45.7135 Error System.Data.SqlClient.SqlException (0x80131904): Символьные или двоичные данные могут быть усечены.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 86
+ClientConnectionId:c4911d04-fd30-4088-99af-93b461e272c3
+Error Number: 8152, State: 13, Class: 16
+2019-05-01 13:40:45.8200 Error System.Data.SqlClient.SqlException (0x80131904): Символьные или двоичные данные могут быть усечены.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 86
+ClientConnectionId:6e89fc80-0ca9-41f6-b82a-d2452e4b8bc4
+Error Number: 8152, State: 13, Class: 16
+2019-05-01 13:41:37.8536 Error System.Data.SqlClient.SqlException (0x80131904): Не удалось вставить значение NULL в столбец "ArticleTitleRu", таблицы "PhoenixArtist.dbo.Articles"; в столбце запрещены значения NULL. Ошибка в UPDATE.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 86
+ClientConnectionId:6e89fc80-0ca9-41f6-b82a-d2452e4b8bc4
+Error Number: 515, State: 2, Class: 16
+2019-05-01 13:46:01.7838 Error System.Web.HttpRequestValidationException (0x80004005): Обнаружено потенциально опасное значение Request.Form, полученное от клиента (RawHtmlEn="<h1><img alt="" src=...").
+   в System.Web.HttpRequest.ValidateString(String value, String collectionKey, RequestValidationSource requestCollection)
+   в System.Web.HttpRequest.<>c__DisplayClass280_0.<ValidateHttpValueCollection>b__0(String key, String value)
+   в System.Web.HttpValueCollection.EnsureKeyValidated(String key)
+   в System.Web.HttpValueCollection.GetValues(String name)
+   в System.Web.Mvc.NameValueCollectionValueProvider.ValueProviderResultPlaceholder.GetResultFromCollection(String key, NameValueCollection collection, CultureInfo culture)
+   в System.Web.Mvc.NameValueCollectionValueProvider.GetValue(String key, Boolean skipValidation)
+   в System.Web.Mvc.ValueProviderCollection.GetValue(String key, Boolean skipValidation)
+   в System.Web.Mvc.DefaultModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   в System.Web.Mvc.DefaultModelBinder.GetPropertyValue(ControllerContext controllerContext, ModelBindingContext bindingContext, PropertyDescriptor propertyDescriptor, IModelBinder propertyBinder)
+   в System.Web.Mvc.DefaultModelBinder.BindProperty(ControllerContext controllerContext, ModelBindingContext bindingContext, PropertyDescriptor propertyDescriptor)
+   в System.Web.Mvc.DefaultModelBinder.BindProperties(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   в System.Web.Mvc.DefaultModelBinder.BindComplexElementalModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Object model)
+   в System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   в System.Web.Mvc.DefaultModelBinder.BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   в System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   в System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__0(AsyncCallback asyncCallback, Object asyncState)
+2019-05-01 13:46:01.8117 Error System.InvalidOperationException: The model item passed into the dictionary is null, but this dictionary requires a non-null model item of type 'NikaArtist.Infrastructure.ViewModels.ErrorModel'.
+   в System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   в System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   в System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   в System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   в System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_7.<BeginInvokeAction>b__5()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2019-05-01 13:46:01.8117 Error System.InvalidOperationException: The model item passed into the dictionary is null, but this dictionary requires a non-null model item of type 'NikaArtist.Infrastructure.ViewModels.ErrorModel'.
+   в System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   в System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   в System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   в System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   в System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   в System.Web.Mvc.Controller.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   в System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   в System.Web.Mvc.Controller.<>c.<BeginExecute>b__151_2(IAsyncResult asyncResult, Controller controller)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   в System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   в System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   в System.Web.Mvc.MvcHandler.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   в System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   в System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   в System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   в System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   в System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2019-05-01 13:49:09.2178 Error System.Data.SqlClient.SqlException (0x80131904): Символьные или двоичные данные могут быть усечены.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 85
+ClientConnectionId:f86350a3-850c-4fe9-9042-070645d6fced
+Error Number: 8152, State: 13, Class: 16
+2019-05-01 13:50:35.5693 Error System.Data.SqlClient.SqlException (0x80131904): Не удалось вставить значение NULL в столбец "RawHtmlRu", таблицы "PhoenixArtist.dbo.Articles"; в столбце запрещены значения NULL. Ошибка в UPDATE.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 85
+ClientConnectionId:d9b74949-5d33-4da9-af59-889dd514b66a
+Error Number: 515, State: 2, Class: 16
+2019-05-01 13:54:00.6463 Error System.Data.SqlClient.SqlException (0x80131904): Не удалось вставить значение NULL в столбец "RawHtmlRu", таблицы "PhoenixArtist.dbo.Articles"; в столбце запрещены значения NULL. Ошибка в UPDATE.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 85
+ClientConnectionId:d9b74949-5d33-4da9-af59-889dd514b66a
+Error Number: 515, State: 2, Class: 16
+2019-05-01 13:57:18.0650 Error System.Data.SqlClient.SqlException (0x80131904): Не удалось вставить значение NULL в столбец "RawHtmlRu", таблицы "PhoenixArtist.dbo.Articles"; в столбце запрещены значения NULL. Ошибка в UPDATE.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 85
+ClientConnectionId:d9b74949-5d33-4da9-af59-889dd514b66a
+Error Number: 515, State: 2, Class: 16
+2019-05-01 14:01:44.0564 Error System.Data.SqlClient.SqlException (0x80131904): Не удалось вставить значение NULL в столбец "RawHtmlRu", таблицы "PhoenixArtist.dbo.Articles"; в столбце запрещены значения NULL. Ошибка в UPDATE.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 85
+ClientConnectionId:d9b74949-5d33-4da9-af59-889dd514b66a
+Error Number: 515, State: 2, Class: 16
+2019-05-01 14:02:13.6810 Error System.Data.SqlClient.SqlException (0x80131904): Не удалось вставить значение NULL в столбец "RawHtmlRu", таблицы "PhoenixArtist.dbo.Articles"; в столбце запрещены значения NULL. Ошибка в UPDATE.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 85
+ClientConnectionId:d9b74949-5d33-4da9-af59-889dd514b66a
+Error Number: 515, State: 2, Class: 16
+2019-05-01 14:02:42.0218 Error System.Data.SqlClient.SqlException (0x80131904): Не удалось вставить значение NULL в столбец "RawHtmlRu", таблицы "PhoenixArtist.dbo.Articles"; в столбце запрещены значения NULL. Ошибка в UPDATE.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 85
+ClientConnectionId:d9b74949-5d33-4da9-af59-889dd514b66a
+Error Number: 515, State: 2, Class: 16
+2019-05-01 14:04:50.1271 Error System.Data.SqlClient.SqlException (0x80131904): Не удалось вставить значение NULL в столбец "RawHtmlRu", таблицы "PhoenixArtist.dbo.Articles"; в столбце запрещены значения NULL. Ошибка в UPDATE.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 85
+ClientConnectionId:d9b74949-5d33-4da9-af59-889dd514b66a
+Error Number: 515, State: 2, Class: 16
+2019-05-01 14:05:11.4411 Error System.Data.SqlClient.SqlException (0x80131904): Не удалось вставить значение NULL в столбец "RawHtmlRu", таблицы "PhoenixArtist.dbo.Articles"; в столбце запрещены значения NULL. Ошибка в UPDATE.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 85
+ClientConnectionId:d9b74949-5d33-4da9-af59-889dd514b66a
+Error Number: 515, State: 2, Class: 16
+2019-05-01 14:05:51.4299 Error System.Data.SqlClient.SqlException (0x80131904): Не удалось вставить значение NULL в столбец "RawHtmlRu", таблицы "PhoenixArtist.dbo.Articles"; в столбце запрещены значения NULL. Ошибка в UPDATE.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 85
+ClientConnectionId:d9b74949-5d33-4da9-af59-889dd514b66a
+Error Number: 515, State: 2, Class: 16
+2019-05-01 14:07:43.2722 Error System.Data.SqlClient.SqlException (0x80131904): Не удалось вставить значение NULL в столбец "RawHtmlRu", таблицы "PhoenixArtist.dbo.Articles"; в столбце запрещены значения NULL. Ошибка в UPDATE.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteNonQueryAsync>d__3.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteNonQueryAsync>d__29.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 510
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<NonQueryQueryAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 751
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.Update`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.Update.cs:строка 110
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.ArticleRepository.<UpdateAsync>d__3.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\ArticleRepository.cs:строка 41
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.ArticleService.<UpdateAsync>d__7.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\ArticleService.cs:строка 105
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditArticle>d__10.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 85
+ClientConnectionId:d9b74949-5d33-4da9-af59-889dd514b66a
+Error Number: 515, State: 2, Class: 16

@@ -1,0 +1,212 @@
+2019-03-28 12:40:48.4156 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-03-28 12:41:35.0862 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-03-28 12:41:36.8289 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-03-28 12:41:49.2845 Error System.ArgumentNullException: —сылка на строку не ссылаетс€ на экземпл€р String.
+»м€ параметра: name
+   в System.Globalization.CultureInfo..ctor(String name, Boolean useUserOverride)
+   в System.Globalization.CultureInfo..ctor(String name)
+   в NikaArtist.Service.Utils.CultureHandler.SetCurrentThreadCulture(String value) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Utils\CultureHandler.cs:строка 16
+   в NikaArtist.Service.Utils.CultureHandler.SetCulture(HttpContext httpContext, String locale) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Utils\CultureHandler.cs:строка 32
+   в NikaArtist.Controllers.HomeController.ChangeLanguage(String locale) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\HomeController.cs:строка 28
+   в lambda_method(Closure , ControllerBase , Object[] )
+   в System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   в System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2019-03-28 12:42:19.7244 Error System.ArgumentNullException: —сылка на строку не ссылаетс€ на экземпл€р String.
+»м€ параметра: name
+   в System.Globalization.CultureInfo..ctor(String name, Boolean useUserOverride)
+   в System.Globalization.CultureInfo..ctor(String name)
+   в NikaArtist.Service.Utils.CultureHandler.SetCurrentThreadCulture(String value) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Utils\CultureHandler.cs:строка 16
+   в NikaArtist.Service.Utils.CultureHandler.SetCulture(HttpContext httpContext, String locale) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Utils\CultureHandler.cs:строка 32
+   в NikaArtist.Controllers.HomeController.ChangeLanguage(String locale) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\HomeController.cs:строка 28
+   в lambda_method(Closure , ControllerBase , Object[] )
+   в System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   в System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2019-03-28 13:54:14.8558 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-03-28 13:54:36.1141 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-03-28 13:54:49.7542 Error System.InvalidOperationException: The view 'Send' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Contact/Send.aspx
+~/Views/Contact/Send.ascx
+~/Views/Shared/Send.aspx
+~/Views/Shared/Send.ascx
+~/Views/Contact/Send.cshtml
+~/Views/Contact/Send.vbhtml
+~/Views/Shared/Send.cshtml
+~/Views/Shared/Send.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2019-03-28 13:55:03.7498 Error System.InvalidOperationException: The view 'Send' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Contact/Send.aspx
+~/Views/Contact/Send.ascx
+~/Views/Shared/Send.aspx
+~/Views/Shared/Send.ascx
+~/Views/Contact/Send.cshtml
+~/Views/Contact/Send.vbhtml
+~/Views/Shared/Send.cshtml
+~/Views/Shared/Send.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2019-03-28 14:06:55.4454 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-03-28 14:07:14.4779 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-03-28 14:07:15.8228 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-03-28 23:24:48.3674 Error System.Security.SecurityException: ќшибка безопасности.
+ќшибкой завершилась сборка со следующим параметром Zone:
+MyComputer
+2019-03-28 23:46:48.3844 Info mikezarb@yandex.ru-Test

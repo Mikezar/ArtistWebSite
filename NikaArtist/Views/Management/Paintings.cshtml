@@ -1,0 +1,32 @@
+﻿@model NikaArtist.Service.Models.PaintingFilterModel
+
+@{
+	ViewBag.Title = "Рисунки";
+	Layout = "~/Views/Shared/_ManagementLayout.cshtml";
+}
+
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+<h3>@ViewBag.Title</h3>
+<div class="line"></div>
+
+@Html.ActionLink("Загрузить новые фотографии", "UploadPainting", null, new { @class = "btn btn-primary" })
+
+<div class="float-right">
+	@Html.DropDownListFor(x => x.CategoryId, Model.Categories, new { @id = "filter", @class = "form-control" })
+</div>
+
+<div id="photo-list">
+	@Html.Partial("_PaintingList", Model.PaintingModel)
+</div>
+
+<script>
+	$('#filter').on('change', function () {
+		var categoryId = $(this).val();
+
+		AjaxHelper.get('@Url.Action("GetPaintings")', { id: categoryId == 0 ? null : categoryId },
+			function (response) {
+				$("#photo-list").html(response);
+			});
+	});
+</script>
+

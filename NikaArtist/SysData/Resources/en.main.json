@@ -1,0 +1,18 @@
+﻿{
+	"homeTitle": "Home",
+	"contactTitle": "Contact me",
+	"locale": "RU",
+	"language": "ru-RU",
+	"contactSubject": "Subject",
+	"contactBody": "Your message",
+	"contactSubmit": "Submit",
+	"captcha": "Please, pass captcha check",
+	"sentMessage": "Your message was successfully submited!",
+	"galleryTitle": "My Art",
+	"blogTitle": "Blog",
+	"goTo": "View",
+	"toCategories": "Categories",
+	"toArticles": "Articles",
+	"videoTitle": "Video",
+	"goHome": "Go back to home"
+}

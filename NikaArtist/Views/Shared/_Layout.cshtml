@@ -1,0 +1,60 @@
+﻿@using NikaArtist.Infrastructure;
+
+@{
+	var locale = ResourceHepler.GetTranslation("main", "locale");
+	var language = ResourceHepler.GetTranslation("main", "language");
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="~/Content/Images/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title - Veronika Shabanova Artist</title>
+	@Styles.Render("~/Content/css?" + Guid.NewGuid())
+	@Scripts.Render("~/bundles/mainBundle")
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</head>
+<body>
+	<div class="home-wrap">
+		<div class="home-back">
+			<img src="~/Content/Images/home_back.png" />
+		</div>
+		<header class="home-header">
+			<div class="header">
+				<div id="nav-palette" class="closed">
+					<div class="palette grade-1"><span>@Html.ActionLink(" ", "Index", "Home", null, new { @class = "link" })</span></div>
+					<div class="palette grade-2"><span>@Html.ActionLink(" ", "Index", "Gallery", null, new { @class = "link" })</span></div>
+					<div class="palette grade-3"><span>@Html.ActionLink(" ", "Index", "Video", null, new { @class = "link" })</span></div>
+					<div class="palette grade-4"><span>@Html.ActionLink(" ", "Index", "Blog", null, new { @class = "link" })</span></div>
+					<div class="palette grade-5"><span>@Html.ActionLink(" ", "Index", "Contact", null, new { @class = "link" })</span></div>
+					<div id="click" class="palette grade-6" onclick="toggleMenu()"><span class="fa fa-lg fa-paint-brush"><a></a></span></div>
+				</div>
+				<div class="home-header-subpanel">
+					<div class="home-header-locale">@Html.ActionLink(locale, "ChangeLanguage", "Home", new { @locale = language, @returnUrl = ViewBag.ReturnUrl }, null)</div>
+					<div class="home-header-socials">
+						<a target="_blank" href="https://www.instagram.com/nikaphoenix/" class="instagram"><img /></a>
+						<a target="_blank" href="https://www.behance.net/veronykashbed6" class="behance"><img /></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="body-content">
+			<div class="home-header-logo">
+				<img src="~/Content/Images/logo-light.png? + @Guid.NewGuid()" />
+			</div>
+			@RenderBody()
+		</div>
+	</div>
+
+	<script>
+		function toggleMenu() {
+			$("#nav-palette").toggleClass("closed");
+		}
+	</script>
+	@RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿@model NikaArtist.Service.Models.ArticleModelList
+@{
+    ViewBag.Title = "Статьи";
+    Layout = "~/Views/Shared/_ManagementLayout.cshtml";
+}
+<script src="//cdn.ckeditor.com/4.11.2/standard/ckeditor.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+<h3>@ViewBag.Title</h3>
+<div class="line"></div>
+
+<button type="button" class="addArticle btn btn-primary">Добавить новую статью</button>
+
+<div id="photo-list">
+    @Html.Partial("_ArticleList", Model)
+</div>
+
+
+<script>
+    $(document).ready(function () {
+		$('.addArticle, .edit').on('click', function (event) {
+			event.preventDefault();
+
+            var id = $(this).prop("id");
+            AddEditEntity(id, '@Url.Action("EditArticle")', '#editArticle');
+		});
+
+		 $('.delete').on('click', function () {
+            var item = $(this);
+            var id = $(item).prop("id");
+            DeleteEntity(id, '@Url.Action("DeleteArticle")', item);
+        });
+    });
+</script>

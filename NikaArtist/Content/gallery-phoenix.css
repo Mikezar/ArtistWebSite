@@ -1,0 +1,95 @@
+﻿.home-back img {
+	content: url('/Content/Images/gallery_back.jpg');
+	filter: brightness(90%);
+}
+
+.home-header-logo {
+	display: none;
+}
+
+#click span,
+.closed #click span {
+	color: #fff;
+}
+
+.grade-1 {
+	background-color: #6b7d43;
+}
+
+.grade-2 {
+	background-color: #f8df98;
+}
+
+.grade-3 {
+	background-color: #e38d83;
+}
+
+.grade-4 {
+	background-color: #6e312f;
+}
+
+.grade-6 {
+	background-color: #626c7a;
+}
+
+.home-header-locale a {
+	color: #626c7a;
+}
+
+.home-header-socials .instagram img {
+	content: url(/Content/Images/instagram-gallery.png);
+}
+
+.home-header-socials .behance img {
+	content: url(/Content/Images/behance-gallery.png);
+}
+
+
+@media(max-width: 1400px) {
+	.grid-item {
+		width: 33%;
+	}
+}
+
+
+
+@media(max-width: 1100px) {
+	.grid-item {
+		width: 45%;
+	}
+}
+
+
+@media(max-width: 600px)
+{
+	.gallery-wrapper-albums {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.gallery-wrapper-albums .gallery-wrapper-album {
+		width: 70%;
+		margin-bottom: 2%;
+	}
+
+	.grid-item {
+		margin-bottom: 10px;
+		width: 80%;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		padding: 5px;
+		background-color: #fff;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.album-label {
+		text-align:center;
+	}
+
+	.album-label h2 {
+		font-size: 1.5em;
+	}
+}

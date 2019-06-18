@@ -1,0 +1,26 @@
+﻿@using NikaArtist.Infrastructure;
+@model NikaArtist.Infrastructure.ViewModels.CategoryModelList
+
+@{
+	ViewBag.Title = ResourceHepler.GetTranslation("main", "galleryTitle");
+	ViewBag.ReturnUrl = Url.Action("Index", "Gallery");
+
+	var goToResource = ResourceHepler.GetTranslation("main", "goTo");
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/gallery-phoenix.css">
+
+<div class="gallery-wrapper">
+	<div class="gallery-wrapper-albums">
+		@foreach (var category in Model.Categories)
+		{
+			<div class="gallery-wrapper-album hovereffect">
+				<img src='@Url.Content("~/Content/Images/" + category.ImagePath)' />
+				<div class="overlay">
+					<h2>@category.Title</h2>
+					<a class="info" href='@Url.Action("Art", new { categoryId = category.Id})'>@goToResource</a>
+				</div>
+			</div>
+		}
+	</div>
+</div>

@@ -1,0 +1,70 @@
+﻿@using NikaArtist.Infrastructure;
+@using reCAPTCHA.MVC;
+@model  NikaArtist.Infrastructure.ViewModels.ContactSendModel
+
+@{
+	ViewBag.Title = ResourceHepler.GetTranslation("main", "contactTitle");
+	ViewBag.ReturnUrl = Url.Action("Index", "Contact");
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Content/contact-phoenix.css">
+
+
+@using (Ajax.BeginForm("Send", "Contact", new AjaxOptions() { HttpMethod = "POST" }, new { @id = "contactForm" }))
+{
+<div class="feedback-form">
+	<div id="sentSuccess" class="alert alert-success">
+		@ResourceHepler.GetTranslation("main", "sentMessage")
+	</div>
+
+	@Html.ValidationMessageFor(x => x.Email)
+	@Html.TextBoxFor(x => x.Email, new { @placeholder = "Email" })
+
+	@Html.ValidationMessageFor(x => x.Subject)
+	@Html.TextBoxFor(x => x.Subject, new { @placeholder = ResourceHepler.GetTranslation("main", "contactSubject")})
+
+	@Html.ValidationMessageFor(x => x.Message)
+	@Html.TextAreaFor(x => x.Message, new { @placeholder = ResourceHepler.GetTranslation("main", "contactBody")})
+
+	<span id="recaptcha-error" class="field-validation-error" style="display:none">
+		<span>@ResourceHepler.GetTranslation("main", "captcha")</span>
+	</span>
+
+	@Html.Recaptcha(theme: CaptchaTheme.Light, type: CaptchaType.Image)
+
+	<button id="contact" class="btn btn-dark">@ResourceHepler.GetTranslation("main", "contactSubmit")</button>
+</div>
+}
+<script>
+	$('#contact').on('click', function (event) {
+		event.preventDefault();
+
+		var captcha = grecaptcha.getResponse();
+
+		if ($('#contactForm').valid()) {
+			if (!captcha.length) {
+				$('#recaptcha-error').show();
+				return;
+			}
+			else {
+				$('#recaptcha-error').hide();
+			}
+			$('#contactForm').submit();
+
+			onSuccessHandler();
+		}
+	});
+
+	function onSuccessHandler() {
+		$('input').val('');
+		$('textarea').val('');
+		grecaptcha.reset();
+		$('#sentSuccess').fadeIn();
+
+		setTimeout(function () {
+			$('#sentSuccess').fadeOut();
+		}, 3500);		
+	}
+</script>

@@ -1,0 +1,46 @@
+﻿@using NikaArtist.Infrastructure;
+@using NikaArtist.Service.Utils;
+@model NikaArtist.Service.Models.ArticleViewModelList
+
+@{
+	ViewBag.Title = ResourceHepler.GetTranslation("main", "blogTitle");
+	ViewBag.ReturnUrl = Url.Action("Index", "Blog");
+
+	var goToResource = ResourceHepler.GetTranslation("main", "goTo");
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/blog-phoenix.css?@Guid.NewGuid()">
+
+<div class="gallery-wrapper">
+	<div class="articles">
+
+		@foreach (var article in Model.Articles)
+		{
+			<div class="article">
+				<a href='@Url.Action("Article", "Blog", new { @id = article.Id})'>
+					@if (article.Cover != null)
+					{
+						<img src="@Url.Content(article.Cover?.ThumbPath)" />
+					}
+					else
+					{
+						<img class="placeholder" src="" />
+					}
+				</a>
+				<div class="article-text">
+					<a href='@Url.Action("Article", "Blog", new { @id = article.Id})' class="title">@(CultureHelper.IsEnCulture ? article.ArticleTitleEn : article.ArticleTitleRu)</a>
+					<div class="description">@(CultureHelper.IsEnCulture ? article.DescriptionEn : article.DescriptionRu)</div>
+					<p class="article-date">@article.CreationDate.ToString("d")</p>
+				</div>
+			</div>
+		}
+	</div>
+</div>
+
+<script>
+	$(document).ready(function () {
+		$('.placeholder').each(function () {
+			this.src = Generator.giveImagePlaceholder();
+		});
+	})
+</script>

@@ -1,0 +1,129 @@
+﻿@model NikaArtist.Service.Models.VideoEditModel
+
+<div id="editUploadModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Редактирование видео @Model.TitleRu</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            @using (Ajax.BeginForm("EditVideo", "Management", new AjaxOptions
+			{
+				OnComplete = "ResponseHandler"
+			}, new { enctype = "multipart/form-data", id = "videoEditForm" }))
+			{
+			<div class="modal-body">
+				<ul class="nav nav-pills">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="pill" href="#home">Основное</a>
+					</li>
+				</ul>
+				<br />
+				@{
+					Html.RenderPartial("~/Views/Management/Modals/_PaintingModal.cshtml");
+				}
+				<div class="tab-content">
+					<div id="home" class="tab-pane container active">
+						@Html.HiddenFor(x => x.Id, new { @class = "ignore"})
+						@Html.HiddenFor(x => x.CreationDate, new { @class = "ignore" })
+						@Html.HiddenFor(x => x.CoverId)
+
+						<div class="form-group row">
+							@Html.LabelFor(x => x.Path, new { @class = "col-sm-4 col-form-label" })
+							<div class="col-sm-8">
+								@Html.TextBoxFor(x => x.Path, new { @class = "form-control" })
+								@Html.ValidationMessageFor(x => x.Path)
+							</div>
+						</div>
+
+						<br />
+						<p class="language-title">Русский</p>
+						<hr />
+						<div class="form-group row">
+							@Html.LabelFor(x => x.TitleRu, new { @class = "col-sm-4 col-form-label" })
+							<div class="col-sm-8">
+								@Html.TextBoxFor(x => x.TitleRu, new { @class = "form-control" })
+								@Html.ValidationMessageFor(x => x.TitleRu)
+							</div>
+						</div>
+						<div class="form-group row">
+							@Html.LabelFor(x => x.DescriptionRu, new { @class = "col-sm-4 col-form-label" })
+							<div class="col-sm-8">
+								@Html.TextAreaFor(x => x.DescriptionRu, new { @class = "form-control" })
+								@Html.ValidationMessageFor(x => x.DescriptionRu)
+							</div>
+						</div>
+						<p class="language-title">Английский</p>
+						<hr />
+						<div class="form-group row">
+							@Html.LabelFor(x => x.TitleEng, new { @class = "col-sm-4 col-form-label" })
+							<div class="col-sm-8">
+								@Html.TextBoxFor(x => x.TitleEng, new { @class = "form-control" })
+								@Html.ValidationMessageFor(x => x.TitleEng)
+							</div>
+						</div>
+						<div class="form-grou row">
+							@Html.LabelFor(x => x.DescriptionEng, new { @class = "col-sm-4 col-form-label" })
+							<div class="col-sm-8">
+								@Html.TextAreaFor(x => x.DescriptionEng, new { @class = "form-control" })
+								@Html.ValidationMessageFor(x => x.DescriptionEng)
+							</div>
+						</div>
+						<hr />
+						<div class="form-group row">
+							@Html.Label("Категория", new { @class = "col-sm-4 col-form-label" })
+							<div class="col-sm-8">
+								@Html.ValidationMessageFor(x => x.CategoryId)
+								@Html.DropDownListFor(x => x.CategoryId, Model.Categories, new { @class = "form-control" })
+							</div>
+						</div>
+						<hr />
+						<div class="form-group row">
+							@Html.ValidationMessageFor(x => x.CoverId)
+							@Html.LabelFor(x => x.CoverId, new { @class = "col-sm-4 col-form-label" })
+							<div id="cover" class="col-sm-8">
+								<img width="200" src="/image?id=@(Model.CoverId.HasValue ? Model.CoverId.Value : 0)" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<div class="clearfix"></div>
+				<button type="button" id="selectCover" class="btn btn-primary">Выбрать изображение</button>
+				<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="ModalHelper.onSuccessSave(this)">Закрыть</button>
+				<button id="submitBtn" type="button" class="btn btn-primary">Сохранить</button>
+
+			</div>
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+	ModalHelper.initForm('videoEditForm');
+
+	$(document).ready(function () {
+		$.validator.setDefaults({ ignore: '.ignore' });
+
+		$('#submitBtn').on('click', function () {
+			var coverId = $('#CoverId').val();
+			var categoryId = $('#CategoryId').val();
+
+			if (!coverId || coverId == 0) {
+				bootbox.alert('Выберите обложку видео');
+				ModalHelper.removeBackDrop();
+				return;
+			}
+			if (!categoryId || categoryId == 0) {
+				bootbox.alert('Укажите категорию');
+				ModalHelper.removeBackDrop();
+				return;
+			}
+
+			$('#videoEditForm').submit();
+
+		});
+	});
+</script>

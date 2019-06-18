@@ -1,0 +1,27 @@
+﻿@using NikaArtist.Infrastructure;
+@using NikaArtist.Service.Utils;
+@model NikaArtist.Service.Models.VideoModelList
+
+@{
+	ViewBag.Title = ResourceHepler.GetTranslation("main", "videoTitle");
+	ViewBag.ReturnUrl = Url.Action("Index", "Video");
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/video-phoenix.css">
+
+<div class="gallery-wrapper">
+	<div class="video-row">
+		@foreach (var video in Model.Videos)
+		{
+		<div class="video">
+			<div class="video-poster" data-fancybox data-width="35%" data-caption="@(CultureHelper.IsEnCulture ? video.DescriptionEn : video.DescriptionRu)" href="@video.Path">
+				<img src="@Url.Content(video.CoverPath)">
+				<div class="overlay-video">
+					<div class="player"></div>
+				</div>
+			</div>
+			<div class="video-description">@(CultureHelper.IsEnCulture ? video.TitleEn : video.TitleRu)</div>
+		</div>
+		}
+	</div>
+</div>

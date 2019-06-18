@@ -1,0 +1,58 @@
+﻿@using NikaArtist.Infrastructure;
+@model NikaArtist.Infrastructure.ViewModels.GalleryPaintingModel
+
+@{
+	ViewBag.Title = ResourceHepler.GetTranslation("main", "galleryTitle");
+	ViewBag.ReturnUrl = Url.Action("Art", "Gallery");
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/gallery-phoenix.css">
+
+<a href='@Url.Action("Index")' class="toAlbumTab">@ResourceHepler.GetTranslation("main", "toCategories")</a>
+
+<div class="gallery-wrapper">
+	<div class="album-label">
+		<h2>@Model.Category.Title</h2>
+	</div>
+	<div class="grid-layout">
+		@foreach (var painting in Model.Paintings.Paintings)
+		{
+			<div class="grid-item">
+				<a class="fancybox" data-fancybox="images" data-caption="@HtmlHelperExt.BuildCaption(painting)" href='/image?id=@painting.Id&?@Guid.NewGuid()'>
+					<img src='@Url.Content(painting.ThumbPath)?@Guid.NewGuid()' />
+				</a>
+			</div>
+		}
+	</div>
+</div>
+
+<script>
+	$(document).ready(function () {
+		$('.grid-layout').masonry({
+			itemSelector: '.grid-item',
+			percentPosition: true,
+			isAnimated: true,
+			easing: 'linear',
+			columnWidth: 4,
+			gutter: 10,
+			resize: true
+		});
+
+
+		$('.fancybox').fancybox({
+			protect: true,
+			loop: true,
+			arrows: true,
+			keyboard: true,
+			wheel: "auto",
+			buttons: [
+				"fullScreen",
+				"close",
+				"share"
+			],
+			infobar: true,
+			spinnerTpl: '<div class="fancybox-loading"></div>',
+			clickContent: false,
+		});
+	});
+</script>

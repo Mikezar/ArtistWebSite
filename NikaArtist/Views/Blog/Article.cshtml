@@ -1,0 +1,34 @@
+﻿@using NikaArtist.Infrastructure;
+@using NikaArtist.Service.Utils;
+@model NikaArtist.Service.Models.ArticleViewModel
+
+@{
+	ViewBag.Title = CultureHelper.IsEnCulture ? Model.ArticleTitleEn : Model.ArticleTitleRu;
+	ViewBag.ReturnUrl = Url.Action("Article", "Blog");
+
+	var goToResource = ResourceHepler.GetTranslation("main", "goTo");
+}
+
+<a href='@Url.Action("Index")' class="toArticles">@ResourceHepler.GetTranslation("main", "toArticles")</a>
+
+<link rel="stylesheet" type="text/css" href="~/Content/blog-phoenix.css">
+
+<div class="gallery-wrapper">
+	<div class="article-frame">
+		<div class="article-cover">
+			@if (@Model.Cover != null)
+			{
+				<img src="/image?id=@Model.Cover.Id" />
+			}
+		</div>
+		<div class="article-header">@(CultureHelper.IsEnCulture ? Model.ArticleTitleEn : Model.ArticleTitleRu)</div>
+		<div class="article-datestamp ">@Model.CreationDate.ToString("d")</div>
+
+		<hr/>
+
+		<div class="article-content">
+			@Html.Raw(CultureHelper.IsEnCulture ? Model.RawHtmlEn : Model.RawHtmlRu)
+		</div>
+	</div>
+</div>
+

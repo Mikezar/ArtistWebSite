@@ -1,0 +1,17 @@
+﻿.home-back img {
+	content: url('/Content/Images/contact_back.jpg');
+	filter: brightness(85%);
+}
+
+.home-header-logo {
+	position: absolute;
+	top: 30%;
+	left: 3%;
+}
+
+@media(max-width: 600px) {
+	.home-header-logo {
+		top: 1%;
+		left: 15%
+	}
+}

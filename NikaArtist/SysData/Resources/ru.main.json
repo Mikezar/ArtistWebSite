@@ -1,0 +1,18 @@
+﻿{
+	"homeTitle": "Главная",
+	"contactTitle": "Обратная связь",
+	"locale": "EN",
+	"language": "en-US",
+	"contactSubject": "Тема",
+	"contactBody": "Ваше обращение",
+	"contactSubmit": "Отправить",
+	"captcha": "Пройдите проверку",
+	"sentMessage": "Сообщение успешно отправлено",
+	"galleryTitle": "Мое творчество",
+	"blogTitle": "Блог",
+	"goTo": "Перейти",
+	"toCategories": "Категории",
+	"toArticles": "Статьи",
+	"videoTitle": "Видео",
+	"goHome": "Вернуться на главную страницу"
+}

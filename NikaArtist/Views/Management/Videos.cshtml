@@ -1,0 +1,30 @@
+﻿@model NikaArtist.Service.Models.VideoModelList
+
+@{
+    ViewBag.Title = "Видео";
+    Layout = "~/Views/Shared/_ManagementLayout.cshtml";
+}
+
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+<h3>@ViewBag.Title</h3>
+<div class="line"></div>
+
+<button type="button" class="addVideo btn btn-primary">Добавить новое видео</button>
+
+<div id="photo-list">
+    @Html.Partial("_VideoList", Model)
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.addVideo, .edit').on('click', function () {
+            var id = $(this).prop("id");
+            AddEditEntity(id, '@Url.Action("EditVideo")', '#editUpload');
+		});
+		  $('.delete').on('click', function () {
+            var item = $(this);
+            var id = $(item).prop("id");
+            DeleteEntity(id, '@Url.Action("DeleteVideo")', item);
+        });
+	});
+</script>

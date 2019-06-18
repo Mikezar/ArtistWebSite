@@ -1,0 +1,42 @@
+﻿@model NikaArtist.Service.Models.VideoModelList
+
+@{
+    Layout = null;
+}
+<br />
+
+@if (Model.Videos.Any())
+{
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>#</th>
+                <th></th>
+                <th>Название</th>
+                <th>Url видео</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var video in Model.Videos)
+            {
+            <tr>
+                <td>@video.Id</td>
+                <td><i id="@video.Id" class="edit fa fa-edit" style="font-size:35px;"></i></td>
+                <td>@video.TitleRu</td>
+                <td>@video.Path</td>
+                <td style="text-align: right">
+                    <i id="@video.Id" class="delete fa fa-trash" style="font-size:35px;"></i>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p class="mt-3">Видео пока нет.</p>
+}
+
+<div id="editUpload"></div>
+

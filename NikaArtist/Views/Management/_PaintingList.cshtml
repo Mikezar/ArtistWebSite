@@ -1,0 +1,73 @@
+﻿@model NikaArtist.Service.Models.PaintingModelList
+
+@{
+    Layout = null;
+}
+<br />
+@if (Model.Paintings.Any())
+{
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="thead-light">
+                <tr>
+                    <th>#</th>
+                    <th></th>
+                    <th>Иконка</th>
+                    <th>Название</th>
+                    <th>Путь к файлу</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var painting in Model.Paintings)
+                {
+				<tr>
+					@Html.HiddenFor(x => painting.Order)
+
+					<td>
+						<a data-painting="@painting.Id" class="up"></a>
+						<a data-painting="@painting.Id" class="down"></a>
+					</td>
+					<td><i id="@painting.Id" class="edit fa fa-edit" style="font-size:35px;"></i></td>
+					<td><img class="photo-thumbnail painting" data-fullsrc="/image?id=@painting.Id"  src='@Url.Content(painting.ThumbPath)?@Guid.NewGuid()' /></td>
+					<td>@painting.TitleRu</td>
+					<td class="path">@painting.Path</td>
+					<td style="text-align: right">
+						<i id="@painting.Id" class="delete fa fa-trash" style="font-size:35px;"></i>
+					</td>
+				</tr>
+                }
+            </tbody>
+        </table>
+    </div>
+	
+	@Html.Partial("~/Views/Management/Modals/_ImageModal.cshtml")
+}
+else
+{
+	<p class="mt-3">Рисунков пока нет.</p>
+}
+
+<div id="editUploadPhoto"></div>
+
+ <script>
+	 $(document).ready(function () {
+		SortHandler('@Url.Action("ChangeOrder")')
+
+        $('img').on('click', function (event) {
+			$('#imgModal')[0].style.display = "block";
+
+			$('#imgModalSrc')[0].src = $(this).data('fullsrc');
+        });
+        $('.delete').on('click', function () {
+            var item = $(this);
+            var photoId = $(item).prop("id");
+            DeleteEntity(photoId, '@Url.Action("DeletePainting")', item);
+        });
+        $('.edit').on('click', function () {
+            var photoId = $(this).prop("id");
+
+			AddEditEntity(photoId, '@Url.Action("EditPainting")', '#editUploadPhoto');
+        })
+    });
+</script>

@@ -1,0 +1,189 @@
+2019-04-08 00:00:51.1876 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S11.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-08 00:00:51.1876 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S8.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-08 21:27:40.7217 Error System.InvalidOperationException: Асинхронной модуль или обработчик завершил работу, когда асинхронная операция была ещё в состоянии ожидания.
+2019-04-08 21:41:14.7147 Error System.InvalidOperationException: Асинхронной модуль или обработчик завершил работу, когда асинхронная операция была ещё в состоянии ожидания.
+2019-04-08 21:51:46.3399 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-04-08 21:52:53.9077 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-04-08 21:58:12.9400 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-04-08 21:58:59.4018 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-04-08 21:59:22.1680 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S4.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-08 21:59:24.8029 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-04-08 21:59:29.4408 Error System.IO.FileNotFoundException: c:\users\mikezar\source\repos\NikaArtist\NikaArtist\SysData\PhotoGallery\Photos\photo_Ph-S14.jpg
+   в System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   в NikaArtist.Service.FileHandler.ImageProcessor.Watermark(ImageAttributes attributes) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\FileHandler\ImageProcessor.cs:строка 101
+   в NikaArtist.Service.Services.PhotoManager.GetPhoto(Int32 photoId, String photoPath, String thumbPath) в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\PhotoManager.cs:строка 26
+2019-04-08 22:15:47.2391 Error System.InvalidOperationException: Асинхронной модуль или обработчик завершил работу, когда асинхронная операция была ещё в состоянии ожидания.
+2019-04-08 22:19:50.5572 Error System.InvalidOperationException: Асинхронной модуль или обработчик завершил работу, когда асинхронная операция была ещё в состоянии ожидания.
+2019-04-08 22:20:03.2710 Error System.InvalidOperationException: Асинхронной модуль или обработчик завершил работу, когда асинхронная операция была ещё в состоянии ожидания.
+2019-04-08 22:24:29.0501 Error System.Data.SqlClient.SqlException (0x80131904): Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_VideoCategoryId". Конфликт произошел в базе данных "PhoenixArtist", таблица "dbo.Categories", column 'Id'.
+Выполнение данной инструкции было прервано.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   в System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   в System.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   в System.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   в System.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   в System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.<ExecuteScalarAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.Async.cs:строка 154
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Data.DataConnection.QueryRunner.<ExecuteScalarAsync>d__30.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Data\DataConnection.QueryRunner.cs:строка 576
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.<ScalarQueryAsync>d__27.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.cs:строка 717
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.Linq.QueryRunner.InsertWithIdentity`1.<QueryAsync>d__4.MoveNext() в C:\projects\linq2db\Source\LinqToDB\Linq\QueryRunner.InsertWithIdentity.cs:строка 94
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в LinqToDB.DataExtensions.<InsertWithInt32IdentityAsync>d__15`1.MoveNext() в C:\projects\linq2db\Source\LinqToDB\DataExtensions.cs:строка 360
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Data.Repositories.VideoRepository.<AddAsync>d__2.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Data\Repositories\VideoRepository.cs:строка 32
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   в NikaArtist.Service.Services.VideoService.<AddAsync>d__5.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\VideoService.cs:строка 30
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Service.Services.VideoService.<UpdateAsync>d__6.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist.Service\Services\VideoService.cs:строка 50
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   в NikaArtist.Controllers.ManagementController.<EditVideo>d__12.MoveNext() в C:\Users\Mikezar\source\repos\NikaArtist\NikaArtist\Controllers\ManagementController.cs:строка 118
+ClientConnectionId:726db779-35f1-4c46-9c54-b92e42b1b228
+Error Number: 547, State: 0, Class: 16
+2019-04-08 22:59:40.5806 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2019-04-08 22:59:46.4759 Error System.InvalidOperationException: The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+   в System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)

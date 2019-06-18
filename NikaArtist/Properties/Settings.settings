@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="NikaArtist.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Email" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">nikaphoenix.artist@gmail.com</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">88meow88</Value>
+    </Setting>
+    <Setting Name="PhotoPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/SysData/PhotoGallery/Photos/</Value>
+    </Setting>
+    <Setting Name="ThumbPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/SysData/PhotoGallery/Thumbs/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,23 @@
+﻿@using NikaArtist.Infrastructure;
+@model NikaArtist.Infrastructure.ViewModels.ErrorModel
+
+@{
+	var goHome = ResourceHepler.GetTranslation("main", "goHome");
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" href="~/Content/Images/favicon.png">
+	@Styles.Render("~/Content/css?" + Guid.NewGuid())
+	<title>@Model.StatusCode</title>
+</head>
+<body class="error-body">
+	<div class="error-page">
+		<h1>@Model.StatusCode</h1>
+		<p class="back-home"><a href="@Url.Action("Index", "Home")">@goHome</a></p>
+	</div>
+</body>
+</html>

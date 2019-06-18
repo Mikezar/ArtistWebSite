@@ -1,0 +1,39 @@
+﻿@model NikaArtist.Service.Models.ArticleModelList
+
+@{
+    Layout = null;
+}
+<br />
+
+@if (Model.Articles.Any())
+{
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>#</th>
+                <th></th>
+                <th>Название</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var article in Model.Articles)
+            {
+                <tr>
+                    <td>@article.Id</td>
+                    <td><i id="@article.Id" class="edit fa fa-edit" style="font-size:35px;"></i></td>
+                    <td>@article.ArticleTitleRu</td>
+                    <td style="text-align: right">
+                        <i id="@article.Id" class="delete fa fa-trash" style="font-size:35px;"></i>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p class="mt-3">Статей пока нет.</p>
+}
+
+<div id="editArticle"></div>
